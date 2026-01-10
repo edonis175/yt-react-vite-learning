@@ -33,12 +33,12 @@ const App = () => {
       <WelcomeMessage />
       <JSXRules />
       <Greeting />
-      {/* <Productinfo /> */}
-      {/* <Users /> */}
-      {/* <Mee /> */}
-      {/* <Person name="Edonis" age={19} /> */}
-      {/* <Product name="Iphone" price={650} /> */}
-      {/* <Loginlogic /> */}
+      <Productinfo />
+      <Users />
+      <Mee />
+      <Person name="Edonis" age={19} />
+      <Product name="Iphone" price={650} />
+      <Loginlogic />
       <Weather />
       <UserStatus loggedIn={true} isAdmin={true} />
       <Inviting timeofDay="morning" />
