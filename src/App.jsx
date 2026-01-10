@@ -14,6 +14,16 @@ import Header from "./components/Header";
 import Footer from "./components/Footer";
 import WelcomeMessage from "./components/WelcomeMessage";
 import JSXRules from "./components/JSXRules";
+import Greeting from "./components/Greeting";
+import Productinfo from "./components/productinfo";
+import Users from "./components/Users";
+import Mee from "./components/Mee";
+import Person from "./components/Person";
+import Product from "./components/Product";
+import Loginlogic from "./components/Loginlogic";
+import Weather from "./components/Weather";
+import UserStatus from "./components/UserStatus";
+import Inviting from "./components/Inviting";
 
 const App = () => {
   return (
@@ -22,6 +32,16 @@ const App = () => {
       <Footer />
       <WelcomeMessage />
       <JSXRules />
+      <Greeting />
+      {/* <Productinfo /> */}
+      {/* <Users /> */}
+      {/* <Mee /> */}
+      {/* <Person name="Edonis" age={19} /> */}
+      {/* <Product name="Iphone" price={650} /> */}
+      {/* <Loginlogic /> */}
+      <Weather />
+      <UserStatus loggedIn={true} isAdmin={true} />
+      <Inviting timeofDay="morning" />
     </div>
   );
 };
