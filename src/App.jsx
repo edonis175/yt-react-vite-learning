@@ -25,11 +25,20 @@ import Weather from "./components/Weather";
 import UserStatus from "./components/UserStatus";
 import Inviting from "./components/Inviting";
 import Events from "./components/Events";
+import UseStateHook from "./components/UseStateHook";
+import SharedState from "./components/SharedState";
+import ExampleOne from "./components/ExampleOne";
+import ExampleTwo from "./components/ExampleTwo";
+import ExampleThree from "./components/ExampleThree";
 
 const App = () => {
   return (
     <div>
+      <ExampleThree />
+      <ExampleTwo />
+      <ExampleOne />
       <Header />
+      <SharedState />
       <Footer />
       <WelcomeMessage />
       <JSXRules />
@@ -44,6 +53,7 @@ const App = () => {
       <UserStatus loggedIn={true} isAdmin={true} />
       <Inviting timeofDay="morning" />
       <Events />
+      <UseStateHook />
     </div>
   );
 };

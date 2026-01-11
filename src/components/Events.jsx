@@ -18,20 +18,20 @@ const Copy = () => {
   );
 };
 
-const Move = () => {
-  function moveHandler() {
-    alert("Mouse move event triggered!");
-    console.log("Mouse move event triggered!");
-  }
-  return <p onMouseMove={moveHandler}>Move your mouse over this text!</p>;
-};
+// const Move = () => {
+//   function moveHandler() {
+//     alert("Mouse move event triggered!");
+//     console.log("Mouse move event triggered!");
+//   }
+//   return <p onMouseMove={moveHandler}>Move your mouse over this text!</p>;
+// };
 
 const Events = () => {
   return (
     <section>
       <Button />
       <Copy />
-      <Move />
+      {/* <Move /> */}
     </section>
   );
 };
