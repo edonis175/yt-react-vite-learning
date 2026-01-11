@@ -24,6 +24,7 @@ import Loginlogic from "./components/Loginlogic";
 import Weather from "./components/Weather";
 import UserStatus from "./components/UserStatus";
 import Inviting from "./components/Inviting";
+import Events from "./components/Events";
 
 const App = () => {
   return (
@@ -42,6 +43,7 @@ const App = () => {
       <Weather />
       <UserStatus loggedIn={true} isAdmin={true} />
       <Inviting timeofDay="morning" />
+      <Events />
     </div>
   );
 };
