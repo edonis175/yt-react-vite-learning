@@ -2,7 +2,7 @@ import { useState } from "react";
 
 const ExampleTwo = () => {
   const [randomNumber, setRandomNumber] = useState(() =>
-    Math.floor(Math.random() * 100)
+    Math.floor(Math.random() * 100),
   );
   const generateNewRandomNumber = () => {
     const newNumber = Math.floor(Math.random() * 100);

@@ -9,7 +9,7 @@
 // }
 
 // export default App;
-import React from "react";
+
 import Header from "./components/Header";
 import Footer from "./components/Footer";
 import WelcomeMessage from "./components/WelcomeMessage";
@@ -30,10 +30,18 @@ import SharedState from "./components/SharedState";
 import ExampleOne from "./components/ExampleOne";
 import ExampleTwo from "./components/ExampleTwo";
 import ExampleThree from "./components/ExampleThree";
+import Counter from "./components/Counter";
+import TodoList from "./components/TodoList";
+import Profile from "./components/Profile";
+import ShoppingList from "./components/ShoppingList";
 
 const App = () => {
   return (
     <div>
+      <ShoppingList />
+      <Profile />
+      <TodoList />
+      <Counter />
       <ExampleThree />
       <ExampleTwo />
       <ExampleOne />
