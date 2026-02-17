@@ -19,7 +19,7 @@ const FetchingData = () => {
         {data.map((todo) => (
           <section key={todo.id}>
             <li>{todo.title}</li>
-            <li>Body --{todo.body}</li>
+            <li>{todo.body}</li>
           </section>
         ))}
       </ul>

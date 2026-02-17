@@ -37,12 +37,18 @@ import ShoppingList from "./components/ShoppingList";
 import CopyInput from "./components/CopyInput";
 import Switcher from "./components/Switcher";
 import FetchingData from "./components/FetchingData";
+import BasicEffect from "./components/BasicEffect";
+import CounterEffect from "./components/CounterEffect";
+import FetchDataEffect from "./components/FetchDataEffect";
 
 // import PopupContext from "./components/PopupContext";
 
 const App = () => {
   return (
     <div>
+      <FetchDataEffect />
+      {/* <CounterEffect /> */}
+      <BasicEffect />
       <FetchingData />
       <Switcher />
       {/* <PopupContext /> */}
