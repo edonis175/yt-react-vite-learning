@@ -40,15 +40,38 @@ import FetchingData from "./components/FetchingData";
 import BasicEffect from "./components/BasicEffect";
 import CounterEffect from "./components/CounterEffect";
 import FetchDataEffect from "./components/FetchDataEffect";
-
+import ComponentA from "./components/ComponentA";
+import ComponentB from "./components/ComponentB";
+import ComponentC from "./components/ComponentC";
+import { createContext } from "react";
+import UserProfile from "./components/UserProfile";
+import { UserProvider } from "./UserContext";
+import UpdateUser from "./components/UpdateUser";
 // import PopupContext from "./components/PopupContext";
 
+export const MyContext = createContext();
+export const MyContext1 = createContext();
+
 const App = () => {
+  const name = "Osmani";
+  const age = 19;
+
   return (
     <div>
+      <UserProvider>
+        <UserProfile />
+        <UpdateUser />
+      </UserProvider>
+      <MyContext.Provider value={name}>
+        <MyContext1.Provider value={age}>
+          <ComponentA />
+        </MyContext1.Provider>
+      </MyContext.Provider>
+      {/* <ComponentB /> */}
+      {/* <ComponentC /> */}
       <FetchDataEffect />
       {/* <CounterEffect /> */}
-      <BasicEffect />
+      {/* <BasicEffect /> */}
       <FetchingData />
       <Switcher />
       {/* <PopupContext /> */}
